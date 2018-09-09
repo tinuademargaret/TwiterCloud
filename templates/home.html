@@ -1,9 +1,223 @@
-{% extends "layout.html" %}
-{% block content %}
-    <html>
-    <body>
-    <h1>My Personal Website</h1>
-    <p>Hi, this is my personal website.</p>
-    </body>
-    </html>
-{% endblock %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Twitter Timeline Wordcloud Maker - Create a wordcloud with a timeline for yourself or that tweep
+    on your timeline </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="utf-8">
+    <meta name="description" itemprop="description" content="Create your own free avatar online and share it with your friends!">
+    <link href="svgavatars/css/normalize.css" rel="stylesheet">
+    <link href="svgavatars/css/spectrum.css" rel="stylesheet">
+    <link href="svgavatars/css/svgavatars.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700|Roboto:400,300,500,700&subset=latin,cyrillic-ext,cyrillic,latin-ext" rel="stylesheet" type="text/css">
+    <script src="svgavatars/js/jquery-1.10.2.min.js"></script>
+    <script src="svgavatars/js/svg.min.js"></script>
+    <script src='svgavatars/js/spectrum.min.js'></script>
+    <script src="svgavatars/js/jquery.scrollbar.min.js"></script>
+    <script src="svgavatars/js/canvg/rgbcolor.js"></script>
+    <script src="svgavatars/js/canvg/StackBlur.js"></script>
+    <script src="svgavatars/js/canvg/canvg.js"></script>
+    <script src="svgavatars/js/svgavatars.en.js"></script>
+    <script src="svgavatars/js/svgavatars.core.min.js"></script>
+    <script src="js/share.min.js"></script>
+    <style>
+        body {
+            background-color: #FAFAFA;
+        }
+        h1 {
+            font-family: Arial, sans-serif;
+            font-size: 4em;
+            text-transform: uppercase;
+            font-weight: bold;
+            margin: 1em 0px 0.5em;
+            color: #7BBD42;
+            text-align: center;
+            padding: 0;
+            margin: 30px 0 0 0;
+        }
+        h2 {
+            text-transform: uppercase;
+            letter-spacing: 5px;
+            font-size: 1.5em;
+            font-weight: normal;
+            margin-bottom: 40px;
+            color: #ED5564;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+        .svga-credit {
+            display: none !important;
+        }
+
+        #share-slogan {
+            color: #444444;
+            font-size: 25px;
+            text-align: center;
+            margin-top: 30px;
+        }
+        #share {
+            width: 300px;
+            margin: 10px auto 20px auto;
+        }
+        #share .pop {
+            margin: 0 5px;
+        }
+        .share-bw {
+            background: url("/images/social-icons.png") no-repeat scroll left top transparent;
+            display: block;
+            float: left;
+            width: 49px;
+            height: 49px;
+            line-height: 0;
+            margin: 0;
+        }
+        .share-bw-facebook {
+            background-position: -1px -1px;
+        }
+        .share-bw-facebook:hover {
+            background-position: -1px -51px;
+        }
+        .share-bw-twitter {
+            background-position: -50px -1px;
+        }
+        .share-bw-twitter:hover {
+            background-position: -50px -51px;
+        }
+        .share-bw-googleplus {
+            background-position: -99px -1px;
+        }
+        .share-bw-googleplus:hover {
+            background-position: -99px -51px;
+        }
+        .share-bw-stumbleupon {
+            background-position: -148px -1px;
+        }
+        .share-bw-stumbleupon:hover {
+            background-position: -148px -51px;
+        }
+        .share-bw-reddit {
+            background-position: -197px -1px;
+        }
+        .share-bw-reddit:hover {
+            background-position: -197px -51px;
+        }
+        .share-bw-vkontakte {
+            background-position: -246px -1px;
+        }
+        .share-bw-vkontakte:hover {
+            background-position: -246px -51px;
+        }
+        .ha-wrapper {
+            margin: 30px 0;
+            padding: 0;
+        }
+        .ha {
+            max-width: 728px;
+            max-height: 100px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .hl {
+            width: 95%;
+            max-width: 728px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        @media only screen and (max-width: 720px) {
+            h1 {
+                font-size: 3em;
+            }
+            h2 {
+                font-size: 1.25em;
+                letter-spacing: 2px;
+            }
+            .ha {
+                max-width: 468px;
+            }
+        }
+        @media only screen and (max-width: 480px) {
+            h1 {
+                font-size: 2.5em;
+            }
+            h2 {
+                font-size: 1.1em;
+                letter-spacing: 0;
+            }
+            .ha {
+                max-width: 320px;
+            }
+            .ha-wrapper {
+                margin: 20px 0;
+            }
+        }
+    </style>
+    <script type="text/javascript">
+        $(function() { $("#share").share({ "networks" : ["twitter", "facebook", "googleplus", "stumbleupon", "reddit"], "theme" : "bw" }); });
+    </script>
+</head>
+<body>
+    <h1>Twitter Timeline Wordcloud Maker</h1>
+    <h2>Create a wordcloud with a timeline for yourself or that tweep Online
+    on your timeline</h2>
+
+    <div class="ha-wrapper">
+        <div class="ha">
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- avatarmaker-top-responsive -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8708471661558831"
+     data-ad-slot="1409612300"
+     data-ad-format="auto"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+        </div>
+    </div>
+
+    <div id="svgAvatars"></div>
+
+    <div class="ha-wrapper">
+        <div class="hl">
+
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- avatarmaker-bottom-links -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8708471661558831"
+     data-ad-slot="6172131503"
+     data-ad-format="link"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+
+        </div>
+    </div>
+
+    <div style="font-size: 1.4em; font-weight: bold; text-align: center;">Create nice acronyms with <a href="https://acronymgenerator.com">Acronym Generator</a></div>
+
+    <div id="share-slogan">Please share!</div>
+    <div id="share" class="share" data-url="https://avatarmaker.com/" data-title="Create Your Own Avatar Online"></div>
+
+<!-- Matomo -->
+<script type="text/javascript">
+  var _paq = _paq || [];
+  /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+  _paq.push(['trackPageView']);
+  _paq.push(['enableLinkTracking']);
+  (function() {
+    var u="https://stats.monohost.com/";
+    _paq.push(['setTrackerUrl', u+'piwik.php']);
+    _paq.push(['setSiteId', '51']);
+    var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+    g.type='text/javascript'; g.async=true; g.defer=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+  })();
+</script>
+<!-- End Matomo Code -->
+
+</body>
+</html>
